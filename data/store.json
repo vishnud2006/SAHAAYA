@@ -1,0 +1,267 @@
+{
+  "users": [
+    {
+      "id": "user-bc3cea2c-048b-42e2-9525-68cace94b1ae",
+      "name": "Vishnu D",
+      "email": "vishnureddyd2006@gmail.com",
+      "passwordHash": "73ee7e25d129fab6c38cdb774210631c995266be646d12344e4cc5a85236ec803b51e201d2f04b79bd64b1ca02fbb5c111c151cfb4b59a4123dbb682eddef0c7",
+      "salt": "3b5d0900c42be6c9af8cd97dfdfe0175",
+      "createdAt": "2026-09-11T06:42:27.927Z",
+      "updatedAt": "2026-09-11T06:42:27.927Z"
+    },
+    {
+      "id": "user-75b87319-2086-4522-b9e2-14a30095934b",
+      "name": "Test Citizen One (Updated)",
+      "email": "test_user_1789120311144_1@example.com",
+      "passwordHash": "2be0591d607f72ebdd8d40bd68ca7d4b2eda69d356c8591a5e2a27899203e83c6f6aa5a09f280cdf41be692d6cc9a426636371e5fc5d0a56d60dc8b2022d24b4",
+      "salt": "7a6f89fe916694ad09cb32ce514faa07",
+      "authProvider": "email",
+      "createdAt": "2026-09-11T09:51:51.188Z",
+      "updatedAt": "2026-09-11T09:51:51.277Z"
+    },
+    {
+      "id": "user-601ed378-12e5-40c6-9713-fc4d13375629",
+      "name": "Test Citizen Two",
+      "email": "test_user_1789120311144_2@example.com",
+      "passwordHash": "8f819e8b2b3500fe4fc8d962a5b892a50270b36af9d8b7770e90bad2d9183ad2f701c7128ffb6d643763bcd8cdff87889a51863bda459844cba9042883f677f6",
+      "salt": "d9a1b8bbca3babae0dba42086fffcd96",
+      "authProvider": "email",
+      "createdAt": "2026-09-11T09:51:51.228Z",
+      "updatedAt": "2026-09-11T09:51:51.228Z"
+    }
+  ],
+  "cases": [
+    {
+      "id": "case-d0f91262-cb12-4b5c-9d28-b0a49459934f",
+      "userId": "user-bc3cea2c-048b-42e2-9525-68cace94b1ae",
+      "title": "You are a college student seeking financial assistance and s",
+      "rawInput": "\"I am 21 years old, studying engineering, my family income is low, and I need financial help for my education.\"\n",
+      "priority": "MEDIUM",
+      "inputSources": [
+        "text"
+      ],
+      "result": {
+        "situation": "You are a college student seeking financial assistance and scholarship opportunities to support your higher education expenses.",
+        "intent": "Identify verified scholarship schemes, clarify income & category requirements, and prepare for online application.",
+        "priority": "MEDIUM",
+        "whatMayHelp": [
+          {
+            "title": "National Scholarship Portal (NSP)",
+            "description": "Central government platform hosting Pre-Matric, Post-Matric, and Merit-cum-Means schemes across Central Ministries.",
+            "whyRelevant": "Designed for students enrolled in recognized higher education courses with family income below statutory thresholds.",
+            "category": "Central Government Scheme",
+            "portalUrl": "scholarships.gov.in"
+          },
+          {
+            "title": "Central Sector Scheme of Scholarships for College and University Students",
+            "description": "Department of Higher Education scheme providing financial assistance to meritorious students from low-income families.",
+            "whyRelevant": "Direct benefit transfer for college tuition support based on board examination percentile.",
+            "category": "Central Ministry Scheme",
+            "portalUrl": "scholarships.gov.in"
+          },
+          {
+            "title": "AICTE Pragati / Saksham / Post-Graduate Scholarships",
+            "description": "Technical education grants for girl students, differently-abled scholars, and engineering degree students.",
+            "whyRelevant": "Applicable if studying in an AICTE-approved technical or engineering institution.",
+            "category": "Technical Education Support",
+            "portalUrl": "aicte-india.org"
+          }
+        ],
+        "whyRelevant": [
+          "Your student status makes you eligible to explore merit-cum-means and post-matric fee reimbursement schemes.",
+          "Your reported income bracket places you within standard eligibility tiers for government educational subsidies.",
+          "Both Central (NSP) and State portals offer recurring annual grants directly deposited into Aadhaar-seeded bank accounts."
+        ],
+        "informationStillNeeded": [
+          "Your State of domicile / residence (state scholarship schemes vary significantly).",
+          "Approximate annual family income (most need-based schemes require under ₹2.5 Lakhs/year).",
+          "Caste / Category (General / OBC / SC / ST / Minority / EWS).",
+          "Current course and year of study (e.g., 2nd Year B.Tech / B.Sc)."
+        ],
+        "actions": [
+          {
+            "title": "Check National Scholarship Portal (NSP) Eligibility",
+            "description": "Visit scholarships.gov.in and browse 'Central Schemes' and 'State Schemes' matching your course and domicile.",
+            "reason": "Direct registration ensures you receive application alerts before seasonal deadlines expire.",
+            "ctaText": "Check Portal"
+          },
+          {
+            "title": "Obtain Verified Revenue Income Certificate",
+            "description": "Apply through your local citizen service center (e.g., Nadakacheri in Karnataka / CSC) or revenue department to obtain a certified digital income certificate.",
+            "reason": "Statutory scholarship schemes require a valid digital income certificate with an active verification barcode.",
+            "ctaText": "Prepare Certificate"
+          },
+          {
+            "title": "Link and Seed Your Bank Account with Aadhaar (DBT Enabled)",
+            "description": "Confirm with your bank branch that your savings account is NPCI-mapped for Direct Benefit Transfer (DBT).",
+            "reason": "Government scholarship grants are disbursed exclusively via Aadhaar-linked NPCI payment bridge.",
+            "ctaText": "Verify Bank Link"
+          },
+          {
+            "title": "Collect College Bonafide & Previous Marksheets",
+            "description": "Request a Bonafide Student Certificate and fee receipt from your college administrative office.",
+            "reason": "Required during document verification stage to confirm ongoing enrollment and academic standing.",
+            "ctaText": "Collect Documents"
+          }
+        ],
+        "documentsNeeded": [
+          "Aadhaar Card (matching name on school records)",
+          "Valid Income Certificate issued by Revenue Authority / Tehsildar",
+          "Previous Year / Semester Marksheets with passing grades",
+          "College Admission Fee Receipt & Bonafide Certificate",
+          "Aadhaar-seeded Bank Passbook (showing Account No. & IFSC)",
+          "Caste / Domicile Certificate (if applicable for reserved quotas)"
+        ],
+        "importantInfo": [
+          "All government scholarship portals (NSP, SSP) are completely FREE to apply — never pay middlemen or unofficial brokers.",
+          "Applications usually open around August-October and close around November-December each academic year.",
+          "Ensure your name, date of birth, and parents' names match exactly between Aadhaar and academic marksheets to prevent portal rejection."
+        ],
+        "recommendedNextStep": "👉 Check the National Scholarship Portal (scholarships.gov.in) to verify if fresh application windows are currently active for your course.",
+        "refinementPrompt": "Tell us your State and family income below so we can pin down exact state schemes and eligibility criteria.",
+        "detectedInformation": [
+          {
+            "label": "Education Level",
+            "value": "College / University Higher Education"
+          },
+          {
+            "label": "Financial Context",
+            "value": "Low / Constrained family income"
+          },
+          {
+            "label": "Assistance Type",
+            "value": "Merit-cum-Means & Post-Matric Scholarship"
+          },
+          {
+            "label": "State Focus",
+            "value": "National / Central"
+          }
+        ],
+        "verified": [
+          "User is currently pursuing higher education.",
+          "User is actively seeking financial scholarship support."
+        ],
+        "needsConfirmation": [
+          "State of domicile",
+          "Specific annual income figure",
+          "Category quota eligibility"
+        ],
+        "resources": [
+          {
+            "type": "National Scholarship Portal (Ministry of Education)",
+            "description": "Central government portal administering nationwide educational assistance."
+          },
+          {
+            "type": "State Higher Education & Social Welfare Department",
+            "description": "State nodal agency for state-specific tuition reimbursement."
+          }
+        ],
+        "warnings": [
+          "SAHAAYA provides decision-support information and does NOT approve scholarships or disburse funds.",
+          "Always verify application status directly on official .gov.in portals."
+        ],
+        "analyzedAt": "02:55 PM",
+        "sourceType": "text",
+        "inputSources": [
+          "text"
+        ]
+      },
+      "createdAt": "2026-09-11T09:25:31.493Z",
+      "updatedAt": "2026-09-11T09:25:31.493Z"
+    },
+    {
+      "id": "case-31536f40-2ebc-407b-9785-42f017493ad7",
+      "userId": "user-bc3cea2c-048b-42e2-9525-68cace94b1ae",
+      "title": "A 67-year-old patient is experiencing a reported severe bloo",
+      "rawInput": "My father is 67. He has old prescriptions and medical reports. Today his blood pressure reading is 190/110 and he is dizzy. We are stuck in traffic while trying to reach a hospital.",
+      "priority": "CRITICAL",
+      "inputSources": [
+        "text",
+        "document"
+      ],
+      "result": {
+        "situation": "A 67-year-old patient is experiencing a reported severe blood pressure reading of 190/110 mmHg with dizziness, while in transit to an emergency hospital during severe traffic congestion.",
+        "intent": "Secure immediate acute medical evaluation, safely manage in-transit hypertensive symptoms, and reach hospital care despite traffic impediments.",
+        "priority": "CRITICAL",
+        "detectedInformation": [
+          {
+            "label": "Patient Age",
+            "value": "67 years old"
+          },
+          {
+            "label": "Reported Vital",
+            "value": "Blood Pressure 190/110 mmHg"
+          },
+          {
+            "label": "Reported Symptoms",
+            "value": "Dizziness, acute hypertension"
+          },
+          {
+            "label": "Available Records",
+            "value": "Historical prescriptions and medical reports present"
+          },
+          {
+            "label": "Logistical Obstacle",
+            "value": "Vehicle trapped in dense traffic en route"
+          }
+        ],
+        "verified": [
+          "Patient is reported as 67 years old with reported BP reading of 190/110 mmHg.",
+          "Caregiver reports patient is experiencing dizziness.",
+          "Past medical documentation is currently with the caregiver.",
+          "Transit is obstructed by road traffic."
+        ],
+        "needsConfirmation": [
+          "Presence of severe red-flag indicators (chest tightness, acute shortness of breath, slurred speech, limb weakness, or vision changes).",
+          "Recent antihypertensive drug compliance, dosages, and administration timing.",
+          "Exact GPS coordinates and proximity to the nearest open emergency cardiac department.",
+          "Whether emergency medical dispatch has been requested for siren escort / paramedic interception."
+        ],
+        "actions": [
+          {
+            "title": "Contact Emergency Medical Dispatch Immediately",
+            "description": "Call local emergency services (dial emergency number) to request an emergency paramedic vehicle or lane escort if vehicle movement is completely halted.",
+            "reason": "Paramedics possess siren transit priority and can administer in-transit stabilization if condition deteriorates."
+          },
+          {
+            "title": "Keep Patient Seated, Calm, and Well-Ventilated",
+            "description": "Ensure the individual stays in a relaxed, seated upright posture without sudden standing or head movements. Loosen restrictive collar clothing.",
+            "reason": "Minimizes sudden postural pressure shifts, fall risk, and reduces physical exertion."
+          },
+          {
+            "title": "Organize Prescriptions and Identification for Intake",
+            "description": "Place all historical prescriptions and reports within arm's reach for immediate handover to triage physicians.",
+            "reason": "Enables emergency physicians to evaluate chronic medication histories rapidly without dangerous drug interaction hazards."
+          }
+        ],
+        "resources": [
+          {
+            "type": "Emergency Medical Services (Ambulance / Dispatch)",
+            "description": "Local official emergency paramedic services for transit assistance."
+          },
+          {
+            "type": "24/7 Hospital Emergency Department",
+            "description": "Nearest accredited tertiary medical facility with active acute emergency triage."
+          },
+          {
+            "type": "Traffic Police / Highway Authority",
+            "description": "Local traffic management for emergency corridor clearance in severe gridlock."
+          }
+        ],
+        "warnings": [
+          "DO NOT administer borrowed or unprescribed blood pressure pills without direct physician direction; rapid drops in blood pressure can precipitate cerebral hypoperfusion.",
+          "SAHAAYA provides decision-support structure and does NOT issue medical diagnoses or replace licensed clinical evaluation.",
+          "If the patient exhibits sudden facial weakness, arm drift, or speech changes, communicate potential stroke symptoms to dispatch immediately."
+        ],
+        "analyzedAt": "12:51 PM",
+        "sourceType": "multimodal",
+        "inputSources": [
+          "text",
+          "document"
+        ]
+      },
+      "createdAt": "2026-09-11T07:21:23.773Z",
+      "updatedAt": "2026-09-11T07:21:23.773Z"
+    }
+  ]
+}
